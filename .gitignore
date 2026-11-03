@@ -1,0 +1,49 @@
+cat > .gitignore <<'EOF'
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Dependencies
+node_modules/
+vendor/
+
+# Build outputs
+build/
+dist/
+coverage/
+
+# Go binaries
+*.exe
+*.dll
+*.so
+*.dylib
+*.test
+cloudwave
+
+# Local storage and metadata
+go-backend/storage/
+go-backend/data/
+storage/
+
+# Local test files
+test-go.txt
+downloaded-go.txt
+reconstructed.txt
+
+# OS and editor files
+.DS_Store
+.vscode/
+.idea/
+
+# Logs
+*.log
+EOFbackend/test.txt
+
+# Local test files
+backend/test.txt
+backend/downloaded.txt
+
+fault-test.txt
+large-test.bin
+large-downloaded.bin
